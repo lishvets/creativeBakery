@@ -1,3 +1,28 @@
-body {
-  margin: 0;
+@import "utils";
+@import "typography";
+
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: $light-blue;
+
+  @include on-desktop {
+    display: none;
+  }
+}
+
+.container {
+  padding-inline: 16px;
+
+  @include on-tablet {
+    padding-inline: 44px;
+  }
+
+  @include on-desktop {
+    padding-inline: 44px;
+  }
+
+  @include on-desktop-big {
+    padding-inline: 124px;
+  }
 }
